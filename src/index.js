@@ -123,7 +123,7 @@ class Game extends React.Component {
         'Go to move #' + move + " @ " + history[move].location :
         'Go to game start';
       return (
-        <li key={move}>
+        <li key={move} className={"historyBtn indBtn" + move}>
           <button onClick={() => this.jumpTo(move)}>
           {move === this.state.stepNumber ? <b>{desc}</b> : desc}
           </button>
