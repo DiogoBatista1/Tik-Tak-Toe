@@ -3,7 +3,8 @@ body {
     height: 100vh;
     margin: 0;
     background: #999;
-    display:flex; 
+    display: grid; 
+    align-items: center;
     flex-direction:column; 
   }
 
@@ -55,6 +56,7 @@ a {
     margin-right: .01em;
     margin-top: .01em;
     text-align: center;
+    grid-template-columns: 100px 100px 100px;
   }
 
   .square:focus {
@@ -80,6 +82,11 @@ a {
       background-color:rgb(172, 161, 161);
   }
 
+  .game-board {
+    width: 320px;
+    height: auto;
+    gap: 10px;
+  }
   
   .game-info ol, .game-info div {
     align-items: center;
